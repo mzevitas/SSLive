@@ -1,158 +1,173 @@
- // Bourbon & Neat
-@import '../../bower_components/bourbon/dist/bourbon';
-@import '../../bower_components/neat/app/assets/stylesheets/neat';
-$logofont: 'Condiment', cursive;
+ @import '../../bower_components/bourbon/dist/bourbon';
+ @import '../../bower_components/neat/app/assets/stylesheets/neat';
+ $logofont: 'Condiment',
+ cursive;
+ $mobile: new-breakpoint(max-width 750px 4);
 
 
-body{
-  color: white;
-  width: 100%;
-  height: auto;
-  background:url(/images/grayfado.jpg) top right no-repeat;
-  background-attachment:fixed;
-  font-family: 'Karla', sans-serif;
-}
-#container {
-    width: 90%;
-    background-color: hsla(0,0%,0%,0.6);
-    margin: 0 auto;
-}
-// ********************* Header Styles  ********************* 
+ body {
+     color: white;
+     width: 100%;
+     height: auto;
+     background: url(/images/grayfado.jpg) top right no-repeat;
+     background-attachment: fixed;
+     font-family: 'Karla', sans-serif;
+ }
+ 
+ #container {
+     width: 90%;
+     background-color: hsla(0, 0%, 0%, 0.6);
+     margin: 0 auto;
+ }
+ 
+ // ********************* Header Styles  ********************* 
+ header {
+     height: 70px;
+     background-color: hsla(0, 0%, 0%, 0.6);
+     .headLeft {
+         display: inline-block;
+         float: left;
+         margin-left: 5%;
+         img {
+             width: 150px;
+             margin-top: -34px;
+         }
+     }
+     .headRight {
+         display: inline-block;
+         margin-right: 5%;
+         float: right;
+         padding: 18px;
+         font-size: 1.4em;
+     }
+     a {
+         padding: 15px;
+         text-decoration: none;
+         color: white;
+     }
+ }
+ 
+ // ********************* Home Page Styles  ********************* 
+ .homepage {
+     width: 100%;
+     height: 449px;
+     .promo {
+         display: block;
+         text-align: center;
+         padding-top: 6%;
+     }
+     iframe {
+         border: 5px solid hsla(0, 0%, 100%, 0.7);
+         border-radius: 10px;
+         padding: 5px;
+     }
+ }
+ 
+ .quote {
+     height: auto;
+     text-align: center;
+     vertical-align: center;
+     font-size: 1.4em;
+     width: 75%;
+     margin: 0 auto;
+     font-family: $logofont;
+     h2 {
+         padding-top: 20px;
+         margin: 0;
+     }
+ }
+ 
+ .liveSocial {
+     @include outer-container;
+     margin-left: auto;
+     margin-right: auto;
+     height: 500px;
+     .upcominggigs {
+         @include span-columns(6);
+         @include media($mobile) {
+             @include span-columns(4);
+         }
+         text-align: center;
+         height: 425px;
+         overflow: auto;
+         h2 {
+             text-decoration: underline;
+             font-family: $logofont;
+         }
+         a {
+             color: green;
+             &:hover {
+                 color: red;
+             }
+         }
+     }
+     .twitterFeed {
+         @include span-columns(6);
+         @include media($mobile) {
+             @include span-columns(4);
+             display: none;
+         }
+         height: 425px;
+         overflow: auto;
+         h2 {
+             text-decoration: underline;
+             text-align: center;
+             font-family: $logofont;
+         }
+     }
+ }
+ 
+ // ********************* Live Page Styles  ********************* 
+ .livepage {
+     margin: 0 auto;
+     text-align: center;
+     margin-left: 5%;
+     height: auto;
+     padding-bottom: 100px;
+     h2 {
+         padding-top: 20px;
+         font-family: $logofont;
+     }
+     .listGigs {
+         @include outer-container;
+         float: left;
+         padding-bottom: 20px;
+         width: 350px;
+         height: 130px;
+         overflow: auto;
+     }
+     .livebottom {
+         @include outer-container;
+         clear: both;
+         .pastgigs {
+             @include span-columns(6);
+             @include media($mobile) {
+                 @include span-columns(4);
+             }
+             height: 350px;
+             overflow: auto;
+         }
+         .songlist {
+             @include span-columns(6);
+             @include media($mobile) {
+                 @include span-columns(4);
+             }
+             height: 350px;
+             overflow: auto;
+         }
+     }
+ }
+ 
+ // ********************* Footer Styles  ********************* 
+ footer {
+    margin-top: 60px;
+     height: 60px;
+     background-color: hsla(0, 0%, 0%, 0.6);
 
-header{
-  height: 70px;
-  background-color: hsla(0,0%,0%,0.6);
-  .headLeft{
-    display: inline-block;
-    float: left;
-    margin-left: 5%;
-  img{
-    width: 150px;
-    margin-top: -34px;
-  }
-}
-  .headRight{
-    display: inline-block;
-    margin-right: 5%;
-    float: right;
-    padding: 18px;
-    font-size: 1.4em;
-  }
-  a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-  }
-}
+     .socialicons{
+      color: white;
+      
+     }
 
-// ********************* Home Page Styles  ********************* 
-.homepage {
-  width: 100%;
-  height: 449px;
-
-  .promo {
-    display: block;
-    text-align: center;
-    padding-top: 6%;
-  }
-  iframe{
-    border: 5px solid hsla(0,0%,100%,0.7);
-    border-radius: 10px;
-    padding: 5px;
-  }
-}
-
-  .quote {
-    height: 50px;
-    text-align: center;
-    vertical-align: center;
-    font-size: 1.4em;
-    width: 75%;
-    margin: 0 auto;
-    font-family: $logofont;
-}
-
-.liveSocial{
-    margin-left: auto;
-    margin-right: auto;
-    height: 500px;
-
-  .upcominggigs {
-    display: block;
-    width: 50%;
-    float: left;
-    text-align: center;
-    padding-right: 40px;
-    padding-left: 40px;
-    height: 425px;
-    overflow: auto;
-    h2 {
-      text-decoration: underline;
-      font-family: $logofont;
-    }
-    a {
-      color: green;
-      &:hover{
-        color: red;
-      }
-    }
-  }
-
-  .twitterFeed{
-    float: left;
-    height: 425px;
-    overflow: auto;
-    width: 50%;
-    padding-right: 40px;
-    padding-left: 40px;
-    h2 {
-      text-decoration: underline;
-      text-align: center;
-      font-family: $logofont;
-    }
-  }
-}
-// ********************* Live Page Styles  ********************* 
-.livepage{
-  margin: 0 auto;
-  text-align: center;
-  margin-left: 5%;
-  // height: auto;
-
-  h2 {
-        font-family: $logofont;
-
-  }
-  .listGigs {
-    float: left;
-  padding-bottom: 20px;
-    width: 350px;
-    height: 130px;
-    overflow: auto;
-
-    
-  }
-
-
-.pastgigs{
-  clear: both;
-  // float: left;
-  // height: 300px;
-  // width: 50%;
-
-}
-// .songlist{
-//   // clear: both;
-//   float: right;
-//   // height: 300px;
-//   // width: 50%;
-
-// }
-
-}
-
-// ********************* Footer Styles  ********************* 
-
-footer {
-  height: 80px;
-}
+     
+ }

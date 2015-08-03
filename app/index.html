@@ -9,6 +9,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+
     <!-- endbower -->
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
@@ -29,11 +30,12 @@
 
     <br>
     <div id="container" ui-view></div>
-    <!-- <div ng-include='"templates/footer.tpl.html"'></div> -->
+    <div ng-include='"templates/footer.tpl.html"'></div>
 
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
     <script src="../bower_components/angular/angular.js"></script>

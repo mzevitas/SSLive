@@ -14,9 +14,11 @@
 	
 
 
+
+
 <div class="upcominggigs" ng-controller="GigCtrl">
 	<h2>Upcoming Gigs</h2>
-
+ 
 	    <br>
 	        <div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'" style="border-bottom: 1px solid white; padding: 20px;">
 	            <h4 style="margin: 0;">{{ g.venueName}}</h4>
@@ -27,15 +29,18 @@
 	            <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
 
 
-	        </div>
-</div>
+		        </div>
+	</div>
 
 
-<div class="twitterFeed">
-<h2>SS Twitter</h2>
-	<a class="twitter-timeline" href="https://twitter.com/SecretSauceLive" data-widget-id="627592406574084096">Tweets by @SecretSauceLive</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</div>
+
+		<div class="twitterFeed">
+		<h2>SS Twitter</h2>
+			<a class="twitter-timeline" href="https://twitter.com/SecretSauceLive" data-widget-id="627592406574084096">Tweets by @SecretSauceLive</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</div>
+
 
 </section>
 

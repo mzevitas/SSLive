@@ -17,21 +17,23 @@
 
 <br>
 <br><br>
+	<div class="livebottom">
+	
 		<div class="pastgigs" ng-controller="VenueCtrl">
-			
-			<h2>Past Venues Played</h2>
-	<div class="venuelist" ng-repeat="v in venues">
-	
-	<div>
-		{{ v.venue }}  
+	    		<h2>Past Venues Played</h2>
+	    <div class="venuelist" ng-repeat="v in venues">
+	        <div>
+	            {{ v.venue }}
+	        </div>
+	    </div>
+		</div>
 
-		
-	
-	</div>
-
-</div>
-
+		<div class="songlist" ng-controller="SongCtrl">
+		<h2>Song List</h2>
+			<div class="songslive" ng-repeat="so in songs | orderBy : 'songtitle'">
+				{{so.songtitle}}
+			</div>
 
 		</div>
-			
+	</div>
 </div>
