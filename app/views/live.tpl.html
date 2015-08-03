@@ -4,10 +4,7 @@
 	    <h2>Upcoming Gigs</h2>
 
 	    <br>
-
-
-
-	        <div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'">
+	       <div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'">
 	            <h4 style="margin: 0;">{{ g.venueName}}</h4>
 
 	            <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
@@ -15,10 +12,11 @@
 
 	            <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
 
-	            <hr>
 	        </div>
 		</div>
 
+<br>
+<br><br>
 		<div class="pastgigs" ng-controller="VenueCtrl">
 			
 			<h2>Past Venues Played</h2>
