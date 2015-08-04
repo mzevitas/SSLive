@@ -94,6 +94,8 @@
              text-decoration: underline;
              font-family: $logofont;
          }
+
+
          a {
              color: green;
              &:hover {
@@ -101,6 +103,7 @@
              }
          }
      }
+
      .twitterFeed {
          @include span-columns(6);
          @include media($mobile) {
@@ -108,7 +111,7 @@
              display: none;
          }
          height: 425px;
-         overflow: auto;
+         // overflow: auto;
          h2 {
              text-decoration: underline;
              text-align: center;
@@ -131,6 +134,7 @@
      .listGigs {
          @include outer-container;
          float: left;
+         margin: 0 auto;
          padding-bottom: 20px;
          width: 350px;
          height: 130px;
@@ -144,7 +148,7 @@
              @include media($mobile) {
                  @include span-columns(4);
              }
-             height: 350px;
+             height: 450px;
              overflow: auto;
          }
          .songlist {
@@ -152,7 +156,7 @@
              @include media($mobile) {
                  @include span-columns(4);
              }
-             height: 350px;
+             height: 450px;
              overflow: auto;
          }
      }
