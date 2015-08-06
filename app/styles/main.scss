@@ -97,7 +97,7 @@
 
 
          a {
-             color: green;
+             color: #7ad149;
              &:hover {
                  color: red;
              }
@@ -124,7 +124,6 @@
  .livepage {
      margin: 0 auto;
      text-align: center;
-     margin-left: 5%;
      height: auto;
      padding-bottom: 100px;
      h2 {
@@ -135,10 +134,18 @@
          @include outer-container;
          float: left;
          margin: 0 auto;
+     margin-left: 3%;
          padding-bottom: 20px;
          width: 350px;
          height: 130px;
          overflow: auto;
+
+          a {
+             color: #7ad149;
+             &:hover {
+                 color: red;
+             }
+         }
      }
      .livebottom {
          @include outer-container;
