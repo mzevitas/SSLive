@@ -186,9 +186,49 @@
      }
 }
 
+// ********************* About Styles  ********************* 
+
+.about {
+    margin: 0 auto;
+     text-align: center;
+     height: auto;
+     padding-bottom: 100px;
+     h2 {
+         padding-top: 15px;
+         font-family: $logofont;
+         margin: 0;
+     }
+     h4 {
+         margin: 0;
+         padding-bottom: 10px;
+         font-family: $logofont;
+     }
+     p {
+        max-width: 600px;
+        padding-top: 10px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.1em;
+     }
+     img {
+        width: 150px;
+        border-radius: 30px;
+     }
+     .bio {
+        display: none;
+
+        &:hover {
+        display: block;
+        }
+     }
+    
+}
+
+
 
  // ********************* Contact Page Styles  ********************* 
 .contactpage{
+    height: 700px;
 
 .formwo {
     max-width: 500px;
