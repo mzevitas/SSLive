@@ -21,7 +21,7 @@
  
 	    <br>
 	        <div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'" style="border-bottom: 1px solid white; padding: 20px;">
-	          <h4 style="margin: 0;">{{ g.venueName}}</h4>
+	          <h4 style="margin: 0;"><strong>{{ g.venueName}}</strong></h4>
 
 	            <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
 	            <p style="margin: 4px;">{{ g.address}} {{g.city}}, {{g.state}}, {{g.zip}}</p>
