@@ -213,16 +213,108 @@
      img {
         width: 150px;
         border-radius: 30px;
-     }
-     .bio {
-        display: none;
+        transition: ease 1s;
 
-        &:hover {
-        display: block;
-        }
      }
+    }
+
+    .doug {
+        .dougp{
+            display: none;
+        }
+    }
+    .doug:hover {
+        .dougp{
+            display: block;
+            transition: all 2s;
+        }
+        img{
+             transform: rotate(5deg);
+             transition: all 2s;
+        }
+    }
     
-}
+        .david {
+        .davidp{
+            display: none;
+        }
+    }
+    .david:hover {
+        .davidp{
+            display: block;
+            transition: all 2s;
+        }
+        img{
+             transform: rotate(5deg);
+             transition: all 2s;
+        }
+    }
+
+        .julie {
+        .juliep{
+            display: none;
+        }
+    }
+    .julie:hover {
+        .juliep{
+            display: block;
+            transition: all 2s;
+        }
+        img{
+             transform: rotate(5deg);
+             transition: all 2s;
+        }
+    }
+        .jason {
+        .jasonp{
+            display: none;
+        }
+    }
+    .jason:hover {
+        .jasonp{
+            display: block;
+            transition: all 2s;
+        }
+        img{
+             transform: rotate(5deg);
+             transition: all 2s;
+        }
+    }
+
+        .andy {
+        .andyp{
+            display: none;
+    }
+    }
+    .andy:hover {
+        .andyp{
+            display: block;
+            transition: all 2s;
+        }
+        img{
+             transform: rotate(5deg);
+             transition: all 2s;
+        }
+    }
+        .mike {
+
+        .mikep{
+            display: none;
+            transition: all 2s;
+
+        }
+    }
+    .mike:hover{
+        .mikep{
+        transition: all 2s;
+            display: block;
+        }
+        img{
+             transform: rotate(5deg);
+             transition: all 2s;
+        }
+    }
+
 
 
 
