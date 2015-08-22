@@ -1,6 +1,6 @@
  @import '../../bower_components/bourbon/dist/bourbon';
  @import '../../bower_components/neat/app/assets/stylesheets/neat';
- $logofont: 'Condiment',
+ $logofont:  'Lobster',
  cursive;
  $mobile: new-breakpoint(max-width 750px 4);
 
@@ -141,7 +141,7 @@
      margin-left: 3%;
          padding-bottom: 20px;
          width: 339px;
-         height: 130px;
+         height: 150px;
          overflow: auto;
 
           a {
@@ -184,6 +184,15 @@
          padding-top: 20px;
          font-family: $logofont;
      }
+}
+
+#owl-images .item{
+  margin: 3px;
+}
+#owl-images .item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 // ********************* About Styles  ********************* 
