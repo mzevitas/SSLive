@@ -46,7 +46,18 @@
          text-decoration: none;
          color: white;
      }
- }
+ 
+    //Mobile Nav
+    nav {
+        display: none;
+        .nav li {
+            display: block;
+        }
+    }
+}
+
+
+
  
  // ********************* Home Page Styles  ********************* 
  .homepage {
@@ -369,15 +380,83 @@
   }
 }
  // ********************* Footer Styles  ********************* 
- footer {
-    margin-top: 60px;
-     height: 60px;
+     footer {
+     margin-top: 60px;
+     height: 80px;
      background-color: hsla(0, 0%, 0%, 0.6);
 
-     .socialicons{
-      color: white;
-      
+     .socialicons {
+         color: white;
+         padding-top: 16px;
+         text-align: center;
+         margin: 0 auto;
+
+         a {
+             color: white;
+             padding: 10px;
+         }
+
+         p{
+            margin: 2px auto;   
+         }
      }
+
 
      
  }
+
+
+ // ********************* ALL MEDIA Queires  ********************* 
+
+
+ @media (max-width: 950px) {
+ .headRight  a{
+   display: none;
+  }
+header{
+    nav {
+        display: block;
+        // float: right;  
+    }
+    .nav {
+        display: none;
+        float: right;
+        font-size: 30px;
+        background-color: hsla(0, 0%, 0%, 0.6);
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+    .nav-btn {
+        display: block;
+        cursor: pointer;
+        float: right;
+        padding-top: 20px;
+    }
+    .btn-img {
+        margin-right: 15px;
+        margin-top: 50px;
+        width: 30px;
+        height: 23px;
+    }
+
+ }
+}
+
+ @media (max-width: 500px) {
+header{
+.headLeft {
+         display: inline-block;
+         float: left;
+         margin-left: 5%;
+         img {
+             width: 100px;
+             margin-top: -20px;
+         }
+     }
+ }
+
+}
+
+
