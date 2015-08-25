@@ -185,6 +185,8 @@
          width: 50%;
          height: 150px;
          overflow: auto;
+             padding-right: 5px;
+    padding-left: 5px;
 
           a {
              color: #7ad149;
@@ -272,6 +274,8 @@
      p {
         max-width: 600px;
         padding-top: 10px;
+        padding-left: 12px;
+         padding-right: 10px;
         text-align: center;
         margin: 0 auto;
         font-size: 1.1em;
@@ -392,6 +396,8 @@
     max-width: 500px;
     margin: 0 auto;
     padding-top: 50px;
+    padding-right: 8px;
+    padding-left: 8px;
 
     .wufoo .info h2{
         font-family: $logofont   
@@ -465,9 +471,10 @@ li{
         float: right;
         padding-top: 20px;
         margin-bottom: 16px;
+        margin-right: -39px;
     }
     .btn-img {
-        margin-right: 15px;
+        margin-right: 10px;
         margin-top: 50px;
         width: 30px;
         height: 23px;
@@ -490,8 +497,9 @@ li{
 .homepage {
     height: auto;
     iframe{
-        width: 300px;
+        width: 270px;
         height: 200px;
+        
     }
 }
 }
@@ -518,11 +526,17 @@ header{
    .mediapage {
 
     iframe {
-        width: 320px;
+        width: 270px;
         height: 150px;
+       
     }
 
-} 
+}
+footer .socialicons p{
+ 
+        font-size: 13px;
+    
+}
 }
 
 
