@@ -1,35 +1,29 @@
  @import '../../bower_components/bourbon/dist/bourbon';
  @import '../../bower_components/neat/app/assets/stylesheets/neat';
- $logofont:  'Lobster',
+ $logofont: 'Lobster',
  cursive;
  $mobile: new-breakpoint(max-width 750px 4);
-  $gigs: new-breakpoint(max-width 800px 4);
-
-
-
+ $gigs: new-breakpoint(max-width 800px 4);
  body {
      color: white;
      width: 100%;
      height: auto;
      background: url(/images/grayfado.jpg) top right no-repeat;
      background-attachment: fixed;
-     background-size: cover; 
+     background-size: cover;
      font-family: 'Karla', sans-serif;
  }
-
  
  #container {
      width: 90%;
      background-color: hsla(0, 0%, 0%, 0.6);
      margin: 0 auto;
-
  }
  
  // ********************* Header Styles  ********************* 
  header {
      height: 70px;
      background-color: hsla(0, 0%, 0%, 0.6);
-           
      .headLeft {
          display: inline-block;
          float: left;
@@ -38,7 +32,7 @@
              width: 150px;
              margin-top: -34px;
              position: absolute;
-            z-index: 1;
+             z-index: 1;
          }
      }
      .headRight {
@@ -53,24 +47,18 @@
          text-decoration: none;
          color: white;
          cursor: pointer;
-         &:hover{
-                text-shadow: 1.5px 1.5px #972822;
-             }
-
+         &:hover {
+             text-shadow: 1.5px 1.5px #972822;
+         }
      }
- 
-    //Mobile Nav
-    nav {
-        display: none;
-        .nav li {
-
-            display: block;
-        }
-    }
-}
-
-
-
+     //Mobile Nav
+     nav {
+         display: none;
+         .nav li {
+             display: block;
+         }
+     }
+ }
  
  // ********************* Home Page Styles  ********************* 
  .homepage {
@@ -107,7 +95,6 @@
      margin-left: auto;
      margin-right: auto;
      height: 500px;
-
      .upcominggigs {
          @include span-columns(6);
          @include media($mobile) {
@@ -116,18 +103,14 @@
          text-align: center;
          height: 425px;
          overflow: auto;
-             padding-left: 8px;
-
+         padding-left: 8px;
          h2 {
              text-decoration: underline;
              font-family: $logofont;
          }
-
          h4 {
-            font-size: 1.2em;
+             font-size: 1.2em;
          }
-
-
          a {
              color: #7ad149;
              &:hover {
@@ -135,11 +118,9 @@
              }
          }
      }
-
-     .upcominggigs::-webkit-scrollbar { 
-    display: none; 
-}
-
+     .upcominggigs::-webkit-scrollbar {
+         display: none;
+     }
      .twitterFeed {
          @include span-columns(6);
          @include media($mobile) {
@@ -147,7 +128,7 @@
              display: none;
          }
          height: 425px;
-             padding-right: 8px;
+         padding-right: 8px;
          // overflow: auto;
          h2 {
              text-decoration: underline;
@@ -156,11 +137,10 @@
          }
      }
  }
-
- .twitterFeed::-webkit-scrollbar { 
-    display: none; 
-}
-
+ 
+ .twitterFeed::-webkit-scrollbar {
+     display: none;
+ }
  
  // ********************* Live Page Styles  ********************* 
  .livepage {
@@ -168,42 +148,35 @@
      text-align: center;
      height: auto;
      padding-bottom: 100px;
-
      h2 {
          padding-top: 20px;
          font-family: $logofont;
          font-size: 1.7em;
-
      }
      .listGigs {
          @include outer-container;
-          @include media($gigs) {
+         @include media($gigs) {
              @include span-columns(4);
          }
          float: left;
          margin: 0 auto;
-     // margin-left: 3%;
+         // margin-left: 3%;
          padding-bottom: 20px;
          width: 50%;
          height: 150px;
          overflow: auto;
-             padding-right: 5px;
-    padding-left: 5px;
-
-          a {
+         padding-right: 5px;
+         padding-left: 5px;
+         a {
              color: #7ad149;
              &:hover {
                  color: red;
              }
          }
      }
-
-
-
-     .listGigs::-webkit-scrollbar { 
-    display: none; 
-}
-
+     .listGigs::-webkit-scrollbar {
+         display: none;
+     }
      .livebottom {
          @include outer-container;
          clear: both;
@@ -226,18 +199,18 @@
          }
      }
  }
-
-
- .pastgigs::-webkit-scrollbar { 
-    display: none; 
-}
-.songlist::-webkit-scrollbar { 
-    display: none; 
-}
-
+ 
+ .pastgigs::-webkit-scrollbar {
+     display: none;
+ }
+ 
+ .songlist::-webkit-scrollbar {
+     display: none;
+ }
+ 
  // ********************* Media Styles  ********************* 
-.mediapage {
-    margin: 0 auto;
+ .mediapage {
+     margin: 0 auto;
      text-align: center;
      height: auto;
      padding-bottom: 20px;
@@ -245,23 +218,19 @@
          padding-top: 20px;
          font-family: $logofont;
      }
-
      iframe {
-        border: 3px solid hsla(0,0%,90%,0.5);
-        padding:5px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        width: 506px;
-        height: 315px;
+         border: 3px solid hsla(0, 0%, 90%, 0.5);
+         padding: 5px;
+         margin-bottom: 10px;
+         border-radius: 10px;
+         width: 506px;
+         height: 315px;
      }
-}
-
-
-
-// ********************* About Styles  ********************* 
-
-.about {
-    margin: 0 auto;
+ }
+ 
+ // ********************* About Styles  ********************* 
+ .about {
+     margin: 0 auto;
      text-align: center;
      height: auto;
      padding-bottom: 100px;
@@ -276,298 +245,258 @@
          font-family: $logofont;
      }
      p {
-        max-width: 600px;
-        padding-top: 10px;
-        padding-left: 12px;
+         max-width: 600px;
+         padding-top: 10px;
+         padding-left: 12px;
          padding-right: 10px;
-        text-align: center;
-        margin: 0 auto;
-        font-size: 1.1em;
+         text-align: center;
+         margin: 0 auto;
+         font-size: 1.1em;
      }
      img {
-        width: 150px;
-        border-radius: 30px;
-        transition: ease 1s;
-
+         width: 150px;
+         border-radius: 30px;
+         transition: ease 1s;
      }
-    }
-
-    .doug {
-        .dougp{
-            display: none;
-        }
-    }
-    .doug:hover {
-        .dougp{
-            display: block;
-            transition: all 2s;
-        }
-        img{
-             transform: rotate(5deg);
-             transition: all 2s;
-        }
-    }
-    
-        .david {
-        .davidp{
-            display: none;
-        }
-    }
-    .david:hover {
-        .davidp{
-            display: block;
-            transition: all 2s;
-        }
-        img{
-             transform: rotate(5deg);
-             transition: all 2s;
-        }
-    }
-
-        .julie {
-        .juliep{
-            display: none;
-        }
-    }
-    .julie:hover {
-        .juliep{
-            display: block;
-            transition: all 2s;
-        }
-        img{
-             transform: rotate(5deg);
-             transition: all 2s;
-        }
-    }
-        .jason {
-        .jasonp{
-            display: none;
-        }
-    }
-    .jason:hover {
-        .jasonp{
-            display: block;
-            transition: all 2s;
-        }
-        img{
-             transform: rotate(5deg);
-             transition: all 2s;
-        }
-    }
-
-        .andy {
-        .andyp{
-            display: none;
-    }
-    }
-    .andy:hover {
-        .andyp{
-            display: block;
-            transition: all 2s;
-        }
-        img{
-             transform: rotate(5deg);
-             transition: all 2s;
-        }
-    }
-        .mike {
-
-        .mikep{
-            display: none;
-            transition: all 2s;
-
-        }
-    }
-    .mike:hover{
-        .mikep{
-        transition: all 2s;
-            display: block;
-        }
-        img{
-             transform: rotate(5deg);
-             transition: all 2s;
-        }
-    }
-
-
-
-
+ }
+ 
+ .doug {
+     .dougp {
+         display: none;
+     }
+ }
+ 
+ .doug:hover {
+     .dougp {
+         display: block;
+         transition: all 2s;
+     }
+     img {
+         transform: rotate(5deg);
+         transition: all 2s;
+     }
+ }
+ 
+ .david {
+     .davidp {
+         display: none;
+     }
+ }
+ 
+ .david:hover {
+     .davidp {
+         display: block;
+         transition: all 2s;
+     }
+     img {
+         transform: rotate(5deg);
+         transition: all 2s;
+     }
+ }
+ 
+ .julie {
+     .juliep {
+         display: none;
+     }
+ }
+ 
+ .julie:hover {
+     .juliep {
+         display: block;
+         transition: all 2s;
+     }
+     img {
+         transform: rotate(5deg);
+         transition: all 2s;
+     }
+ }
+ 
+ .jason {
+     .jasonp {
+         display: none;
+     }
+ }
+ 
+ .jason:hover {
+     .jasonp {
+         display: block;
+         transition: all 2s;
+     }
+     img {
+         transform: rotate(5deg);
+         transition: all 2s;
+     }
+ }
+ 
+ .andy {
+     .andyp {
+         display: none;
+     }
+ }
+ 
+ .andy:hover {
+     .andyp {
+         display: block;
+         transition: all 2s;
+     }
+     img {
+         transform: rotate(5deg);
+         transition: all 2s;
+     }
+ }
+ 
+ .mike {
+     .mikep {
+         display: none;
+         transition: all 2s;
+     }
+ }
+ 
+ .mike:hover {
+     .mikep {
+         transition: all 2s;
+         display: block;
+     }
+     img {
+         transform: rotate(5deg);
+         transition: all 2s;
+     }
+ }
+ 
  // ********************* Contact Page Styles  ********************* 
-.contactpage{
-    height: 700px;
-    width: 100%;
-
-.formwo {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-right: 2px;
-    padding-left: 2px;
-    text-align: center;
-
-    .wufoo .info h2{
-        font-family: $logofont   
+ .contactpage {
+     height: 700px;
+     width: 100%;
+     .formwo {
+         width: 90%;
+         max-width: 700px;
+         display: block;
+         margin: 0 auto;
+         padding-top: 50px;
+         padding-right: 2px;
+         text-align: center;
+         .wufoo .info h2 {
+             font-family: $logofont
          }
-  }
-
-
-
-}
+     }
+ }
+ 
  // ********************* Footer Styles  ********************* 
-     footer {
+ footer {
      margin-top: 60px;
      height: 80px;
      background-color: hsla(0, 0%, 0%, 0.6);
-
      .socialicons {
          color: white;
          padding-top: 16px;
          text-align: center;
          margin: 0 auto;
-
          a {
              color: white;
              padding: 10px;
-             &:hover{
-                text-shadow: 2px 2px #972822;
+             &:hover {
+                 text-shadow: 2px 2px #972822;
              }
          }
-
-
-         p{
-            margin: 2px auto;   
+         p {
+             margin: 2px auto;
          }
      }
-
-
-     
  }
-
-
+ 
  // ********************* ALL MEDIA Queires  ********************* 
-
-
  @media (max-width: 950px) {
-
-
- .headRight  a{
-   display: none;
-  }
-header{
-    background-color: hsla(0, 0%, 0%, 0.8);
-    nav {
-        display: block;
-
-    }
-    .nav {
-        display: none;
-        position: relative;
-        float: right;
-        font-size: 30px;
-        background-color: hsla(0, 0%, 0%, 0.8);
-        width: 100%;
-        text-align: center;
-        margin:2px auto 10px auto;
-li{
-    padding: 5px;
-
- 
-    }    
-    }
-    .nav-btn {
-        display: block;
-        cursor: pointer;
-        float: right;
-        padding-top: 20px;
-        margin-bottom: 16px;
-        margin-right: -39px;
-    }
-    .btn-img {
-        margin-right: 10px;
-        margin-top: 50px;
-        width: 30px;
-        height: 23px;
-    }
-
- }
-}
-
-
- @media (max-width: 600px) {
-    .mediapage {
-
-    iframe {
-        width: 400px;
-        height: 200px;
-    }
-
-} 
-
-.homepage {
-    height: auto;
-    iframe{
-        width: 270px;
-        height: 200px;
-        
-    }
-}
-}
-
- @media (max-width: 500px) {
-header{
-.headLeft {
-         display: inline-block;
-         float: left;
-         margin-left: 5%;
-         img {
-             width: 100px;
-             margin-top: -15px;
+     .headRight a {
+         display: none;
+     }
+     header {
+         background-color: hsla(0, 0%, 0%, 0.8);
+         nav {
+             display: block;
+         }
+         .nav {
+             display: none;
+             position: relative;
+             float: right;
+             font-size: 30px;
+             background-color: hsla(0, 0%, 0%, 0.8);
+             width: 100%;
+             text-align: center;
+             margin: 2px auto 10px auto;
+             li {
+                 padding: 5px;
+             }
+         }
+         .nav-btn {
+             display: block;
+             cursor: pointer;
+             float: right;
+             padding-top: 20px;
+             margin-bottom: 16px;
+             margin-right: -39px;
+         }
+         .btn-img {
+             margin-right: 10px;
+             margin-top: 50px;
+             width: 30px;
+             height: 23px;
          }
      }
-     .nav {
-        font-size: 20px;
+ }
+ 
+ @media (max-width: 600px) {
+     .mediapage {
+         iframe {
+             width: 400px;
+             height: 200px;
+         }
+     }
+     .homepage {
+         height: auto;
+         iframe {
+             width: 270px;
+             height: 200px;
+         }
      }
  }
-
-}
-
- @media (max-width: 460px) {
-   .mediapage {
-
-    iframe {
-        width: 270px;
-        height: 150px;
-       
-    }
-
-}
-footer .socialicons p{
  
-        font-size: 13px;
-    
-}
-
-
-}
-
+ @media (max-width: 500px) {
+     header {
+         .headLeft {
+             display: inline-block;
+             float: left;
+             margin-left: 5%;
+             img {
+                 width: 100px;
+                 margin-top: -15px;
+             }
+         }
+         .nav {
+             font-size: 20px;
+         }
+     }
+ }
+ 
+ @media (max-width: 460px) {
+     .mediapage {
+         iframe {
+             width: 270px;
+             height: 150px;
+         }
+     }
+     footer .socialicons p {
+         font-size: 13px;
+     }
+ }
+ 
  @media (max-width: 340px) {
-.contactpage{
-
-.formwo {
-    width: 98%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding-top: 50px;
-   
-    text-align: center;
-
-   
-  }
-
-
-
-}
-}
-
-
+     .contactpage {
+         .formwo {
+             width: 98%;
+             max-width: 300px;
+             margin: 0 auto;
+             padding-top: 50px;
+             text-align: center;
+         }
+     }
+ }
