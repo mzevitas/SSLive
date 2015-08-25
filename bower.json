@@ -2,14 +2,14 @@
   "name": "sslive",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
-    "underscore": "~1.6.0",
-    "bourbon": "~4.0.2",
-    "neat": "~1.6.0",
-    "normalize-css": "~3.0.1",
     "angular": "~1.4.3",
     "angular-material": "~0.10.0",
     "angular-ui-router": "~0.2.15",
-    "font-awesome": "~4.4.0"
+    "bourbon": "~4.0.2",
+    "font-awesome": "fontawesome#~4.4.0",
+    "jquery": "~2.1.1",
+    "neat": "~1.6.0",
+    "normalize-css": "~3.0.1",
+    "underscore": "~1.6.0"
   }
 }
