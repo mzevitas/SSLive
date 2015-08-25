@@ -8,6 +8,7 @@
 
                 var getSong = function() {
                     return $http.get(PARSE.URL + 'classes/songs', PARSE.CONFIG);
+                
 
                 };
 
