@@ -129,11 +129,16 @@
          }
          height: 425px;
          padding-right: 8px;
+
          // overflow: auto;
          h2 {
              text-decoration: underline;
              text-align: center;
              font-family: $logofont;
+         }
+
+         .data-width {
+            width: 50%;
          }
      }
  }
