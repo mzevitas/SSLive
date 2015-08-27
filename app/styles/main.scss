@@ -67,7 +67,7 @@
      .promo {
          display: block;
          text-align: center;
-         padding-top: 6%;
+        padding-top:10px
      }
      iframe {
          border: 5px solid hsla(0, 0%, 100%, 0.7);
@@ -76,17 +76,32 @@
      }
  }
  
- .quote {
+ .bandname {
      height: auto;
      text-align: center;
      vertical-align: center;
-     font-size: 1.4em;
+     font-size: 2em;
      width: 75%;
      margin: 0 auto;
      font-family: $logofont;
      h2 {
-         padding-top: 20px;
+         padding-top: 10px;
          margin: 0;
+
+     }
+ }
+ .quote {
+     height: auto;
+     text-align: center;
+     vertical-align: center;
+     font-size: 2em;
+     width: 75%;
+     margin: 0 auto;
+     font-family: $logofont;
+     h2 {
+         padding-top: 0px;
+         margin: 0;
+         margin-bottom: 10px;
      }
  }
  
@@ -157,15 +172,15 @@
          font-size: 1.7em;
      }
      .listGigs {
-         @include outer-container;
-         @include media($gigs) {
-             @include span-columns(4);
-         }
-         float: left;
+         // @include outer-container;
+         // @include media($gigs) {
+         //     @include span-columns(4);
+         // }
+         // float: left;
          margin: 0 auto;
          // margin-left: 3%;
          padding-bottom: 20px;
-         width: 50%;
+         width: 90%;
          height: 150px;
          overflow: auto;
          padding-right: 5px;
