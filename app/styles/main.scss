@@ -170,26 +170,52 @@
      .header {
             margin: 0;
          font-family: $logofont;
-         font-size: 1.35em;
+         font-size: 1.45em;
      }
      .afters {
          margin-top: 35px;
          font-family: $logofont;
-         font-size: 1.35em;
+         font-size: 1.6em;
+
+         
+     }
+
+     .whereSS{
+           font-size: 0.7em;
+           margin-top: 10px;
+        a{
+           color: #7ad149;
+             &:hover {
+                 color: red;
+             }
+         }
      }
      .make {
          margin: 0 0 10px;
      }
-     .emailput {
+    .emailput {
          border-radius: 3px;
-
+         border: none;
+         height: 33px;
+         padding-left: 5px;
+         color: black;
+         width: 250px;
+         text-align: center;
      }
+     
      #subbtn {
-         background: #dedfdc;
-         border-radius: 5px;
-         box-shadow: 1px 1px 1px 1px black;
+         margin-top: 10px;
+         color: black;
+         height: 33px;
+         width:100px;
+         border-radius: 3px;
+         background-color:#e5e5e5;
+         border:none;
      }
  }
+
+
+
  
  // ********************* Live Page Styles  ********************* 
  .livepage {

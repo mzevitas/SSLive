@@ -48,20 +48,40 @@
 <div class="mailinglist">
 <form class="inputEmail">
   <h3 class="header">Sign Up for our Mailing List </h3>
-  <h3 class="afters" style="display: none;">Thanks for Signing up!</h3>
+  <h3 class="afters" style="display: none;">
+  Thanks for Signing up!
+
+  <br>
+
+
+<span class="whereSS"><a ui-sref="live">Click To See Where SS is Next!</a></span>
+  </h3>
   <p class="make">Chance to win free prices.</p>
 
-  <md-input-container class="emailput" style="border:1px solid white;  color: white;">
-        <label>Song Name</label>
-        <input type="email" ng-model="em.emailAddress"/>
-      </md-input-container>
 
-   <md-button id="subbtn"class="md-raised">Sign-Up</md-button>
+
+        <input type="email" class="emailput" placeholder="Enter Email" ng-model="em.emailAddress"/>
+
+
+
+   <input type="button" id="subbtn" name="Sign-Up" value="Sign-Up">
 </form>  
 
 </div>
 
 
+<script>
+     
+$("form #subbtn").on('click', function(e) {
+  e.preventDefault();   
+   $('.header').fadeOut('fast');
+  $('form .make').fadeOut('fast'); 
+  $('form #subbtn').fadeOut('fast');
+   $('form .emailput').fadeOut('fast');
+  
+  $('.afters').slideToggle('slow');
+});
+</script>
 
 
 <div id="fb-root"></div>
