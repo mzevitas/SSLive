@@ -8,7 +8,8 @@
      color: white;
      width: 100%;
      height: auto;
-     background: url(/images/grayfado.jpg) top right no-repeat;
+     background: url(/images/FadoLarge.jpg) top right no-repeat;
+     // background: url(/images/grayfado.jpg) top right no-repeat;
      background-attachment: fixed;
      background-size: cover;
      font-family: 'Karla', sans-serif;
@@ -67,7 +68,7 @@
      .promo {
          display: block;
          text-align: center;
-        padding-top:10px
+         padding-top: 10px
      }
      iframe {
          border: 5px solid hsla(0, 0%, 100%, 0.7);
@@ -87,9 +88,9 @@
      h2 {
          padding-top: 10px;
          margin: 0;
-
      }
  }
+ 
  .quote {
      height: auto;
      text-align: center;
@@ -144,20 +145,50 @@
          }
          height: 425px;
          padding-right: 8px;
-
          // overflow: auto;
          h2 {
              text-decoration: underline;
              text-align: center;
              font-family: $logofont;
          }
-
-       
      }
  }
  
  .twitterFeed::-webkit-scrollbar {
      display: none;
+ }
+
+
+ .mailinglist {
+     form {
+         width: 300px;
+         height: 200px;
+         padding: 10px;
+         margin: 10px auto;
+         text-align: center;
+     }
+     .header {
+            margin: 0;
+         font-family: $logofont;
+         font-size: 1.35em;
+     }
+     .afters {
+         margin-top: 35px;
+         font-family: $logofont;
+         font-size: 1.35em;
+     }
+     .make {
+         margin: 0 0 10px;
+     }
+     .emailput {
+         border-radius: 3px;
+
+     }
+     #subbtn {
+         background: #dedfdc;
+         border-radius: 5px;
+         box-shadow: 1px 1px 1px 1px black;
+     }
  }
  
  // ********************* Live Page Styles  ********************* 
@@ -397,9 +428,6 @@
              font-family: $logofont
          }
      }
-
-
-
  }
  
  // ********************* Footer Styles  ********************* 
@@ -423,6 +451,9 @@
              margin: 2px auto;
          }
      }
+
+     
+
  }
  
  // ********************* ALL MEDIA Queires  ********************* 

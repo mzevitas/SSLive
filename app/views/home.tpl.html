@@ -1,75 +1,94 @@
 <div class="homepage">
-
-<div class="bandname">
-	<h2><i>Secret Sauce Band</i></h2>
+    <div class="bandname">
+        <h2><i>Secret Sauce Band</i></h2>
+    </div>
+    	<br>
+    	
+    <div class="promo">
+        <iframe width="650" height="340" src="https://www.youtube.com/embed/grMR4InC-Ys" frameborder="0" allowfullscreen></iframe>
+    </div>
 </div>
 
-<br>
-	<div class="promo">
-		<iframe width="650" height="340" src="https://www.youtube.com/embed/grMR4InC-Ys" frameborder="0" allowfullscreen></iframe>
-	</div>
-</div>
-<br>
+		<br>
+		<br>
 
-<br>
 <div class="quote">
-	<h2><i>"The More You Drink, The Better We Sound!"</i></h2>
+    <h2><i>"The More You Drink, The Better We Sound!"</i></h2>
 </div>
-
-<br>
-<hr style="clear: both; width: 80%; margin: 0 auto;">
-<br>
+		<br>
+			<hr style="clear: both; width: 80%; margin: 0 auto;">
+		<br>
 
 <section class="liveSocial">
-	
+    <div class="upcominggigs" ng-controller="GigCtrl">
+        <h2>Upcoming Gigs</h2>
+        	<br>
+        <div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'" style="border-bottom: 1px solid white; padding: 20px;">
+            <h4 style="margin: 0;"><strong>{{ g.venueName}}</strong></h4>
+            <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
+            <p style="margin: 4px;">{{ g.address}} {{g.city}}, {{g.state}}, {{g.zip}}</p>
+            <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
+        </div>
+    </div>
 
+    <div class="twitterFeed">
+        <div class="fb-page" data-href="https://www.facebook.com/secretsauceband" data-width="400px" data-height="425px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/secretsauceband"><a href="https://www.facebook.com/secretsauceband">Secret Sauce</a></blockquote>
+            </div>
+        </div>
+    </div>
 
-
-
-<div class="upcominggigs" ng-controller="GigCtrl">
-	<h2>Upcoming Gigs</h2>
- 
-	    <br>
-	        <div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'" style="border-bottom: 1px solid white; padding: 20px;">
-	          <h4 style="margin: 0;"><strong>{{ g.venueName}}</strong></h4>
-
-	            <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
-	            <p style="margin: 4px;">{{ g.address}} {{g.city}}, {{g.state}}, {{g.zip}}</p>
-
-	            <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
-
-
-		        </div>
-	</div>
-
-
-
-		<div class="twitterFeed">
-		<div class="fb-page" data-href="https://www.facebook.com/secretsauceband" data-width="400px" data-height="425px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/secretsauceband"><a href="https://www.facebook.com/secretsauceband">Secret Sauce</a></blockquote></div></div>
-		</div>
-
-
-
-
+    
 </section>
+            <hr style="clear: both; width: 80%; margin: 0 auto;">
 
-	<div id="fb-root"></div>
+
+
+<div class="mailinglist">
+<form class="inputEmail">
+  <h3 class="header">Sign Up for our Mailing List </h3>
+  <h3 class="afters" style="display: none;">Thanks for Signing up!</h3>
+  <p class="make">Chance to win free prices.</p>
+
+  <md-input-container class="emailput" style="border:1px solid white;  color: white;">
+        <label>Song Name</label>
+        <input type="email" ng-model="em.emailAddress"/>
+      </md-input-container>
+
+   <md-button id="subbtn"class="md-raised">Sign-Up</md-button>
+</form>  
+
+</div>
+
+
+
+
+<div id="fb-root"></div>
 <script>
 (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-	</div>
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+</div>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-66504197-2', 'auto');
-  ga('send', 'pageview');
-
+ga('create', 'UA-66504197-2', 'auto');
+ga('send', 'pageview');
 </script>
