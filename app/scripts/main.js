@@ -2,7 +2,7 @@
 
     'use strict';
     
-angular.module('app', ['ui.router',  'ngMaterial'])
+angular.module('app', ['ui.router',  'ngMaterial', 'angular-carousel'])
     .constant('PARSE', {
         URL: 'https://api.parse.com/1/',
         CONFIG: {

@@ -3,7 +3,10 @@
   "private": true,
   "dependencies": {
     "angular": "~1.4.3",
+    "angular-bootstrap": "~0.13.3",
+    "angular-carousel": "~0.3.12",
     "angular-material": "~0.10.0",
+    "angular-touch": "~1.4.4",
     "angular-ui-router": "~0.2.15",
     "bourbon": "~4.0.2",
     "font-awesome": "fontawesome#~4.4.0",

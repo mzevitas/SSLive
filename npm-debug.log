@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'higgidy_carousel',
+1 verbose cli   '--save' ]
+2 info using npm@2.13.2
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/mikezevitas/Projects/SSLIVE/package.json
+6 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/connect/package.json
+7 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/connect-livereload/package.json
+8 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp/package.json
+9 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-autoprefixer/package.json
+10 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-bower-files/package.json
+11 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-cache/package.json
+12 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-csso/package.json
+13 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-filter/package.json
+14 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-flatten/package.json
+15 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-if/package.json
+16 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-imagemin/package.json
+17 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-livereload/package.json
+18 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-load-plugins/package.json
+19 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-plumber/package.json
+20 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-prompt/package.json
+21 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-ruby-sass/package.json
+22 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-size/package.json
+23 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-uglify/package.json
+24 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/gulp-useref/package.json
+25 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/lazypipe/package.json
+26 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/opn/package.json
+27 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/rimraf/package.json
+28 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/streamqueue/package.json
+29 verbose installManyTop reading scoped package data from /Users/mikezevitas/Projects/SSLIVE/node_modules/wiredep/package.json
+30 info package.json connect-livereload@0.4.1 No license field.
+31 info package.json gulp-if@1.2.5 No license field.
+32 info package.json gulp-plumber@0.6.6 No license field.
+33 info package.json lazypipe@0.2.4 No license field.
+34 info package.json streamqueue@0.1.3 No license field.
+35 info package.json wiredep@1.8.6 No license field.
+36 verbose readDependencies loading dependencies from /Users/mikezevitas/Projects/SSLIVE/package.json
+37 silly cache add args [ 'higgidy_carousel', null ]
+38 verbose cache add spec higgidy_carousel
+39 silly cache add parsed spec { raw: 'higgidy_carousel',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'higgidy_carousel',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: '*',
+39 silly cache add   type: 'range' }
+40 silly addNamed higgidy_carousel@*
+41 verbose addNamed "*" is a valid semver range for higgidy_carousel
+42 silly addNameRange { name: 'higgidy_carousel', range: '*', hasData: false }
+43 silly mapToRegistry name higgidy_carousel
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/higgidy_carousel
+47 verbose addNameRange registry:https://registry.npmjs.org/higgidy_carousel not in flight; fetching
+48 verbose request uri https://registry.npmjs.org/higgidy_carousel
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 15:08:59
+51 verbose request id a111ac8fc498846f
+52 http request GET https://registry.npmjs.org/higgidy_carousel
+53 http 404 https://registry.npmjs.org/higgidy_carousel
+54 verbose headers { 'content-type': 'application/json',
+54 verbose headers   'cache-control': 'max-age=0',
+54 verbose headers   'content-length': '2',
+54 verbose headers   'accept-ranges': 'bytes',
+54 verbose headers   date: 'Fri, 28 Aug 2015 19:08:59 GMT',
+54 verbose headers   via: '1.1 varnish',
+54 verbose headers   age: '0',
+54 verbose headers   connection: 'keep-alive',
+54 verbose headers   'x-served-by': 'cache-jfk1029-JFK',
+54 verbose headers   'x-cache': 'MISS',
+54 verbose headers   'x-cache-hits': '0',
+54 verbose headers   'x-timer': 'S1440788939.290608,VS0,VE81' }
+55 silly get cb [ 404,
+55 silly get   { 'content-type': 'application/json',
+55 silly get     'cache-control': 'max-age=0',
+55 silly get     'content-length': '2',
+55 silly get     'accept-ranges': 'bytes',
+55 silly get     date: 'Fri, 28 Aug 2015 19:08:59 GMT',
+55 silly get     via: '1.1 varnish',
+55 silly get     age: '0',
+55 silly get     connection: 'keep-alive',
+55 silly get     'x-served-by': 'cache-jfk1029-JFK',
+55 silly get     'x-cache': 'MISS',
+55 silly get     'x-cache-hits': '0',
+55 silly get     'x-timer': 'S1440788939.290608,VS0,VE81' } ]
+56 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/higgidy_carousel
+56 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:14)
+56 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+56 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:197:22)
+56 verbose stack     at Request.emit (events.js:110:17)
+56 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1050:14)
+56 verbose stack     at Request.emit (events.js:129:20)
+56 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:996:12)
+56 verbose stack     at IncomingMessage.emit (events.js:129:20)
+56 verbose stack     at _stream_readable.js:908:16
+56 verbose stack     at process._tickCallback (node.js:355:11)
+57 verbose statusCode 404
+58 verbose pkgid higgidy_carousel
+59 verbose cwd /Users/mikezevitas/Projects/SSLIVE
+60 error Darwin 14.5.0
+61 error argv "node" "/usr/local/bin/npm" "install" "higgidy_carousel" "--save"
+62 error node v0.12.7
+63 error npm  v2.13.2
+64 error code E404
+65 error 404 Registry returned 404 for GET on https://registry.npmjs.org/higgidy_carousel
+65 error 404
+65 error 404 'higgidy_carousel' is not in the npm registry.
+65 error 404 You should bug the author to publish it (or use the name yourself!)
+65 error 404
+65 error 404 Note that you can also install from a
+65 error 404 tarball, folder, http url, or git url.
+66 verbose exit [ 1, true ]

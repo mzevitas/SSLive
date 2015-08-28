@@ -12,11 +12,16 @@
 </div>
 
 
+<div class="imglinkd">
+<ul rn-carousel class="image" ng-controller="MediaCtrl"  height="1000px">
+<div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="carouselIndex"></div>
 
+  <li ng-repeat="m in medias">
+    <img class="layer" src="{{ m.imglink }}">
+  </li>
+</ul>
 </div>
-
-
-
+</div>
 
 
 <script>
