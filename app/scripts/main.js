@@ -27,7 +27,8 @@ angular.module('app', ['ui.router',  'ngMaterial'])
 
 		      .state('about',{
 		      	url: '/about',
-		      	templateUrl: 'views/about.tpl.html'
+		      	templateUrl: 'views/about.tpl.html',
+		      	controller: 'AboutCtrl'
 		      })
 		      .state('live',{
 		      	url: '/live',
