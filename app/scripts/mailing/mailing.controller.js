@@ -15,6 +15,8 @@
         MailFactory.add(mailObj).success( function (results) {
           mailObj.objectId = results.objectId;
           cache.remove(PARSE.URL + 'classes/mail');
+
+          
           console.log("Email Added");
         
         });
