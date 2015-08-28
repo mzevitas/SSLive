@@ -11,7 +11,7 @@
         var addMail = function(mailObj) {
             return $http.post(PARSE.URL + 'classes/mail', mailObj, PARSE.CONFIG)
                 .success(function() {
-                    $state.go('portal');
+
 
                 });
         };
