@@ -320,6 +320,7 @@
      h2 {
          padding-top: 20px;
          font-family: $logofont;
+         font-size: 1.9em;
      }
      iframe {
          border: 3px solid hsla(0, 0%, 90%, 0.5);
@@ -330,6 +331,85 @@
          height: 315px;
      }
  }
+
+ .imglinkd{
+
+ul[rn-carousel] {
+    width: 600px;
+    margin: 0 auto;
+    height:400px;
+    // border: 3px solid hsla(0, 0%, 90%, 0.5);
+    // padding: 5px;
+         margin-bottom: 10px;
+         // border-radius: 10px;
+}
+
+
+ul[rn-carousel] > li {
+
+    img {
+        max-width:100%;
+        max-height:100%;
+        border-radius: 10px;
+        border: 3px solid hsla(0, 0%, 90%, 0.5);
+        padding: 5px;
+
+
+    }
+}
+
+.rn-carousel-control.rn-carousel-control-next {
+    margin-top: -100px;
+    margin-right: 18%;
+
+}
+
+.rn-carousel-control.rn-carousel-control-prev {
+    margin-top: -100px;
+    margin-left: 18%;
+}
+}
+
+
+
+ .vidlinkd{
+
+ul[rn-carousel] {
+    width: 600px;
+    margin: 0 auto;
+    height:400px;
+    margin-bottom: 10px;
+         
+}
+
+
+ul[rn-carousel] > li {
+
+    img {
+        max-width:100%;
+        max-height:100%;
+        border-radius: 10px;
+        border: 3px solid hsla(0, 0%, 90%, 0.5);
+        padding: 5px;
+
+
+    }
+}
+
+.rn-carousel-control.rn-carousel-control-next {
+    margin-top: 400px;
+    margin-right: 18%;
+
+}
+
+.rn-carousel-control.rn-carousel-control-prev {
+    margin-top: 400px;
+    margin-left: 18%;
+}
+}
+
+
+
  
  // ********************* About Styles  ********************* 
  .about {

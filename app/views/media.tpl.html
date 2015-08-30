@@ -1,26 +1,31 @@
 <div class="mediapage" style=" width: 100%;">
-	
-	<h2>Secret Sauce Videos</h2>
-<div class="videos">
-	
-  <iframe src="https://www.youtube.com/embed/kArghmz2w30" frameborder="0" allowfullscreen></iframe>
+  	
+  <h2>Secret Sauce Images</h2>
   <br>
-  <iframe src="https://www.youtube.com/embed/grMR4InC-Ys" frameborder="0" allowfullscreen></iframe>
+  <div class="imglinkd">
+      <ul rn-carousel rn-carousel-controls rn-carousel-index="carouselIndex" rn-carousel-buffered rn-carousel-auto-slide rn-carousel-transition="fadeAndSlide" class="image" ng-controller="MediaCtrl" height="1000px">
+          <li ng-repeat="m in medias">
+              <img class="layer" src="{{ m.imglink }}">
+          </li>
+      </ul>
+  </div>
   <br>
-  <iframe src="https://www.youtube.com/embed/txEMz9X14zA" frameborder="0" allowfullscreen></iframe>
-
-</div>
-
-
-<div class="imglinkd">
-<ul rn-carousel class="image" ng-controller="MediaCtrl"  height="1000px">
-<div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="carouselIndex"></div>
-
-  <li ng-repeat="m in medias">
-    <img class="layer" src="{{ m.imglink }}">
-  </li>
-</ul>
-</div>
+  <br>
+  <h2>Secret Sauce Videos</h2>
+  <br>
+  <div class="vidlinkd">
+      <ul rn-carousel rn-carousel-controls rn-carousel-index="carouselIndex" rn-carousel-buffered rn-carousel-auto-slide="4" rn-carousel-transition="fadeAndSlide" class="video" height="1000px">
+          <li>
+              <iframe src="https://www.youtube.com/embed/txEMz9X14zA" frameborder="0" allowfullscreen></iframe>
+          </li>
+          <li>
+              <iframe src="https://www.youtube.com/embed/grMR4InC-Ys" frameborder="0" allowfullscreen></iframe>
+          </li>
+          <li>
+              <iframe src="https://www.youtube.com/embed/kArghmz2w30" frameborder="0" allowfullscreen></iframe>
+          </li>
+      </ul>
+  </div>
 </div>
 
 
