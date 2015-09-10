@@ -46,10 +46,15 @@
      a {
          padding: 15px;
          text-decoration: none;
+         position: relative;
          color: white;
          cursor: pointer;
          &:hover {
              text-shadow: 1.5px 1.5px #972822;
+         }
+
+         &:active {
+            top: 1px;
          }
      }
      //Mobile Nav
