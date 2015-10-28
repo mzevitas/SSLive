@@ -14,8 +14,12 @@
 <br>
 <br>
 <br><br><br>
-<div class="abouthome">
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A esse nesciunt error illo sit itaque delectus, aliquid? Fugiat doloribus architecto, beatae enim, vero perspiciatis quis quisquam! Officia quam, doloribus aspernatur.</p>
+<div ng-controller="AboutCtrl">
+  
+<div class="aboutA"  ng-repeat="a in abouts">
+      <h2> About Secret Sauce </h2>
+        <p>{{ a.bandbio}}</p>
+        </div>
 </div>
 
 		<br>

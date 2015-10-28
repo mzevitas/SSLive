@@ -92,6 +92,30 @@
     }
 
  }
+
+ 
+ .aboutA {
+     margin: 0 auto;
+     text-align: center;
+     height: auto;
+
+     h2 {
+         padding-top: 15px;
+         font-family: $logofont;
+         margin: 0;
+     }
+    
+     p {
+         max-width: 600px;
+         padding-top: 10px;
+         padding-left: 12px;
+         padding-right: 10px;
+         text-align: center;
+         margin: 0 auto;
+         font-size: 1.1em;
+     }
+    
+ }
  
  .bandname {
      height: auto;
@@ -413,6 +437,11 @@ ul[rn-carousel] > li {
 }
 }
 
+.imglinkd ul[rn-carousel] {
+    width: 50%;
+    margin: 0 auto;
+}
+
 
 
  
@@ -596,7 +625,7 @@ ul[rn-carousel] > li {
  }
  
  // ********************* ALL MEDIA Queires  ********************* 
- @media (max-width: 950px) {
+ @media  (max-width: 950px) {
      .headRight a {
          display: none;
      }
