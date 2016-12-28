@@ -1,0 +1,28 @@
+
+    <div class="about" ng-repeat="a in abouts">
+      <h2> About Secret Sauce </h2>
+        <p>{{ a.bandbio}}</p>
+
+<br>
+<hr style="clear: both; width: 80%; margin: 0 auto;">
+<br>
+
+<div class="songlist" ng-controller="SongCtrl">
+    <h2>Song List</h2>
+      <div class="songslive" ng-repeat="so in songs | orderBy : 'songtitle'">
+        <div>{{so.songtitle}}  {{so.band}}</div>
+      </div>
+
+    </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66504197-2', 'auto');
+  ga('send', 'pageview');
+
+</script>

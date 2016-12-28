@@ -34,6 +34,10 @@ angular.module('app', ['ui.router',  'ngMaterial', 'angular-carousel'])
 		      	url: '/live',
 		      	templateUrl: 'views/live.tpl.html'
 		      })
+		      .state('songlist',{
+		      	url: '/song-list',
+		      	templateUrl: 'views/songlist.tpl.html'
+		      })
 		      .state('contact',{
 		      	url: '/contact',
 		      	templateUrl: 'views/contact.tpl.html'
